@@ -8,10 +8,24 @@ const collectEmployees = function() {
   let addMoreEmployees = true;
 
   while (addMoreEmployees) {
-    const firstName = prompt("Enter employees first name:");
-    const lastName = prompt("enter employess last name:");
-    let salary = Float(prompt("enter employees:"));
+    const firstName = prompt("Enter employee's first name:");
+    const lastName = prompt("enter employee's last name:");
+    let salary = parseFloat(prompt("enter employee's salary:"));
+
+    if (!isNaN(salary) && salary > 0) {
+      const employee = {
+        firstName: firstName,
+        lastName: lastName,
+        salary: salary
+      };
+      employees.push(employee);
+    }
+    const continueAdding = confirm("Add another employee?");
+    if (!continueAdding) {
+      addMoreEmployees = false;
+    }
   }
+  return employees;
 }
 
 // Display the average salary
