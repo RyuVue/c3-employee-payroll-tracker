@@ -14,6 +14,6 @@ Was given a deployable but non operational employee payroll tracker. The goal wa
 
 [Github](https://github.com/RyuVue/c3-employee-payroll-tracker/tree/main)
 
-[deployed aplication]()
+[deployed aplication](https://ryuvue.github.io/c3-employee-payroll-tracker/)
 
 
